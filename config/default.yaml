@@ -1,0 +1,25 @@
+# The github usernames who are allowed to use this bot. Users not on this
+# list will be silently ignored
+allowedUsernames:
+  - turt2live
+
+# The secret supplied by github in order to make this work. Make this strong.
+githubSecret: "YOUR_SECRET"
+
+# The path to the private key and app ID provided by github for your app
+appId: 123
+privateKeyPath: "/data/key.pem"
+
+# The web server options
+web:
+  # The address to listen for requests on
+  address: '0.0.0.0'
+
+  # The port to listen for requests on
+  port: 8080
+
+  # The path the bot should use to listen for webhooks from github on.
+  webhookPath: "/github"
+
+  # Where to dump and store builds of riot on disk.
+  buildPaths: "/data/riots"

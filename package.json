@@ -1,0 +1,27 @@
+{
+  "name": "github-riot-adhoc-bot",
+  "version": "0.0.1",
+  "description": "Makes riot-web builds",
+  "main": "lib/index.js",
+  "repository": "git@github.com:turt2live/github-riot-adhoc-bot.git",
+  "author": "TravisR",
+  "license": "Apache-2.0",
+  "private": false,
+  "dependencies": {
+    "@octokit/auth-app": "^2.4.6",
+    "@octokit/rest": "^17.9.3",
+    "@octokit/webhooks": "^7.6.2",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "js-yaml": "^3.14.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/node": "^14.0.10",
+    "typescript": "^3.9.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node lib/index.js"
+  }
+}
